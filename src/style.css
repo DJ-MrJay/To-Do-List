@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-height: 100%;
+    background-image:
+      radial-gradient(transparent, black),
+      url(pexels-felix-mittermeier-957040.jpg);
+    background-size: cover, 100%;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed;
+  }
+  
+  .todo {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 500px;
+    min-width: 375px;
+    background-image: radial-gradient(rgba(98, 22, 68, 0.301), rgba(168, 152, 223, 0.6));
+    box-shadow:
+      0 0 5px white,
+      0 0 12px white,
+      0 0 20px rgb(99, 11, 140),
+      0 0 29px rgb(99, 11, 140);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    animation: toDoList 1s;
+    gap: 10px;
+  }
+  
+  .todo-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(36, 5, 122, 0.8);
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
+    font-family: 'Rubik Moonrocks', sans-serif;
+  }
+  
+  .todo-title a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Rubik Moonrocks', sans-serif;
+  }
+  
+  .todo-new-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .todo-new-item input {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgb(202, 195, 218);
+    font-style: italic;
+  }
+  
+  .todo-new-item input:focus {
+    outline: none;
+  }
+  
+  .todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .todo-list-label {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    border-radius: 50px;
+    background-image: linear-gradient(to top, rgb(111, 51, 149, 0.3), rgb(69, 9, 138, 0.5));
+    gap: 10px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .todo-list-label p {
+    cursor: pointer;
+  }
+  
+  .todo-list-label:hover {
+    background-color: rgb(221, 221, 221);
+  }
+  
+  .input-text {
+    border: none;
+    background-color: transparent;
+    text-align: left;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+  
+  input[type='checkbox']:checked + .input-text {
+    text-decoration: line-through;
+  }
+  
+  .todo-clear-all-completed {
+    background-color: rgba(105, 29, 110, 0.8);
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid grey;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-family: 'Rubik Moonrocks', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .todo-clear-all-completed:hover {
+    background-color: rgb(156, 156, 156);
+  }
+  
+  .closure-button {
+    cursor: pointer;
+    filter: invert(100%);
+  }
+  
+  .closure-button:hover {
+    filter: invert(0%);
+  }
+  
+  .enter-icon {
+    height: 20px;
+    width: 20px;
+  }
+  
+  .select-all {
+    cursor: pointer;
+    filter: invert(100%);
+    font-family: sans-serif;
+    font-weight: 900;
+  }
+  
+  .select-all:hover {
+    filter: invert(0%);
+  }
+  
+  .image-plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 60px;
+    cursor: pointer;
+    border-radius: 15px;
+    filter: invert(100%);
+    font-family: 'Rubik Moonrocks', sans-serif;
+  }
+  
+  .image-plus:hover {
+    filter: invert(0%);
+  }
+  
+  @keyframes toDoList {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -60px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @media all and (max-width: 768px) {
+    body {
+      background-size: cover, cover;
+    }
+    
+    .todo {
+      min-width: 324px;
+      width: 324px;
+    }
+  }
+  
