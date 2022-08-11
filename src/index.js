@@ -1,10 +1,10 @@
 import './style.css';
 import Dynamic from './modules/creatingItems.js';
 import { insertNewItem } from './modules/insertNewItem.js';
-import { setLocalStorage } from './modules/setLocalStorage';
-import { clearAllSelected } from './modules/clearAllSelected';
-import { deleteAll } from './modules/deleteAll';
-import { render } from './modules/render';
+import { setLocalStorage } from './modules/setLocalStorage.js';
+import { clearAllSelected } from './modules/clearAllSelected.js';
+import { deleteAll } from './modules/deleteAll.js';
+import { render } from './modules/render.js';
 import DataClass, {
   cleanList, clearAll, selectAll, clickPlus, newItem,
 } from './modules/variables.js';

@@ -1,9 +1,11 @@
-import { render } from './render';
-import { setLocalStorage } from './setLocalStorage';
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable import/no-cycle */
+import { render } from './render.js';
+import { setLocalStorage } from './setLocalStorage.js';
 import { toDoList } from './variables.js';
-import { editingText } from './editingText';
-import { strikethroughLines } from './strikethroughLines';
-import { closingBtn } from './closingBtn';
+import { editingText } from './editingText.js';
+import { strikethroughLines } from './strikethroughLines.js';
+import { closingBtn } from './closingBtn.js';
 import trashIcon from './icons/Trash.svg';
 
 export default class Dynamic {
@@ -53,5 +55,4 @@ export default class Dynamic {
       }
     });
   };
-
 }
