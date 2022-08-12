@@ -26,13 +26,12 @@ selectAll.addEventListener('click', () => {
 addTask.addEventListener('click', () => {
   if (newItem.value === '') {
     alert('Blank input'); // eslint-disable-line no-alert
-  } 
-  else {
-  const { value } = newItem;
-  insertNewItem(value);
-  newItem.value = '';
-  render();
-  setLocalStorage();
+  } else {
+    const { value } = newItem;
+    insertNewItem(value);
+    newItem.value = '';
+    render();
+    setLocalStorage();
   }
 });
 
