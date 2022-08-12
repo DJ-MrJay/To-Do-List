@@ -4,7 +4,7 @@ import { render } from './render.js';
 import { setLocalStorage } from './setLocalStorage.js';
 import { toDoList } from './variables.js';
 import { editInput } from './editInput.js';
-import { strikethroughLines } from './strikethroughLines.js';
+import { checkedItem } from './checkedItem.js';
 import { closeButton } from './closeButton.js';
 import trashIcon from './icons/Trash.svg';
 
@@ -42,7 +42,7 @@ export default class Dynamic {
 
     // Strikethrough lines in texts
     labelItem.addEventListener('click', () => {
-      strikethroughLines(labelItem, inputCheckbox, index);
+      checkedItem(labelItem, inputCheckbox, index);
     });
 
     // Editing input of list item
