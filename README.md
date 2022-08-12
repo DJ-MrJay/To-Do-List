@@ -1,5 +1,5 @@
-# To-Do-List
-A simple HTML list of To-Do tasks
+# To-Do List
+A simple HTML list of To-do tasks
 
 ## Built With
 - HTML
