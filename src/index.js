@@ -1,8 +1,8 @@
 import './style.css';
-import Dynamic from './modules/creatingItems.js';
+import Dynamic from './modules/createItems.js';
 import { insertNewItem } from './modules/insertNewItem.js';
 import { setLocalStorage } from './modules/setLocalStorage.js';
-import { clearAllSelected } from './modules/clearAllSelected.js';
+import { clearSelected } from './modules/clearSelected.js';
 import { deleteAll } from './modules/deleteAll.js';
 import { render } from './modules/render.js';
 import DataClass, {
@@ -12,7 +12,7 @@ import DataClass, {
 cleanList();
 
 clearAll.addEventListener('click', () => {
-  clearAllSelected();
+  clearSelected();
   render();
   setLocalStorage();
 });

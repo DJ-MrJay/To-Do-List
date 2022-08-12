@@ -15,7 +15,7 @@ body {
   padding: 50px 10%;
 }
 
-.todo {
+.to-do-container {
   min-width: 400px;
   overflow: hidden;
   display: flex;
@@ -26,7 +26,7 @@ body {
   border-radius: 2px;
 }
 
-.todo-title {
+.to-do-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,12 +34,12 @@ body {
   padding: 3%;
 }
 
-.todo-title a {
+.to-do-header a {
   text-decoration: none;
   color: inherit;
 }
 
-.todo-new-item {
+.to-do-new-item {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -47,7 +47,7 @@ body {
   padding: 3%;
 }
 
-.todo-new-item input {
+.to-do-new-item input {
   width: 85%;
   border: none;
   font-size: inherit;
@@ -55,16 +55,16 @@ body {
   color: green;
 }
 
-.todo-new-item input:focus {
+.to-do-new-item input:focus {
   outline: none;
 }
 
-.todo-list {
+.to-do-list {
   display: flex;
   flex-direction: column;
 }
 
-.todo-list-label {
+.to-do-list-item {
   display: flex;
   padding: 3%;
   align-items: center;
@@ -73,11 +73,11 @@ body {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.todo-list-label p {
+.to-do-list-item p {
   cursor: pointer;
 }
 
-.todo-list-label:hover {
+.to-do-list-item:hover {
   background-color: #e5e5e5;
 }
 
@@ -95,7 +95,7 @@ input[type='checkbox']:checked + .input-text {
   text-decoration: line-through;
 }
 
-.todo-clear-all-completed {
+.to-do-clear-completed {
   padding: 3%;
   text-align: center;
   cursor: pointer;
@@ -120,10 +120,10 @@ input[type='checkbox']:checked + .input-text {
   filter: invert(50%);
 }
 
-.image-plus {
+.add-task {
   cursor: pointer;
 }
 
-.image-plus:hover {
+.add-task:hover {
   filter: invert(50%);
 }
