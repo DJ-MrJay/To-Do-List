@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,29 +9,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <title>To-Do List | Microverse Project</title>
 </head>
+
 <body>
-    <div class="todo">
-        <div class="todo-title">
-            <a href="#index.html"><p>Today's To-Do</p></a>
-            <small class="select-all">delete all</small>
-        </div>
-
-        <div class="todo-new-item">
-            <input id="newItem" type="text" placeholder="Add your list...">
-            <div class="image-plus"><i class="fas fa-plus"></i></div>
-        </div>
-
-        <div class="todo-list">
-            
-        </div>
-
-        <div class="todo-clear-all-completed">
-            <p>Clear all completed</p>
-        </div>
+  <div class="todo">
+    <div class="todo-title">
+      <a href="#index.html">
+        <p>Today's To-Do</p>
+      </a>
+      <div class="select-all"><i class="fas fa-sync"></i></div>
     </div>
-  
+
+    <div class="todo-new-item">
+      <input id="newItem" type="text" placeholder="Add your list...">
+      <div class="image-plus"><i class="fas fa-plus"></i></div>
+    </div>
+
+    <div class="todo-list">
+      <!-- Dynamic -->
+    </div>
+
+    <div class="todo-clear-all-completed">
+      <p>Clear all completed</p>
+    </div>
+  </div>
 </body>
+
 </html>
