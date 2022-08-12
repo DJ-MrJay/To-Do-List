@@ -1,15 +1,15 @@
 export const cleanList = () => {
-  const toDoList = document.querySelector('.todo-list');
+  const toDoList = document.querySelector('.to-do-list');
   while (toDoList.firstChild) {
     toDoList.removeChild(toDoList.lastChild);
   }
 };
 
-export const clearAll = document.querySelector('.todo-clear-all-completed');
+export const clearAll = document.querySelector('.to-do-clear-completed');
 export const selectAll = document.querySelector('.select-all');
-export const clickPlus = document.querySelector('.image-plus');
+export const clickPlus = document.querySelector('.add-task');
 export const newItem = document.getElementById('newItem');
-export const toDoList = document.querySelector('.todo-list');
+export const toDoList = document.querySelector('.to-do-list');
 export default class DataClass {
       static dataStructure = []
 }

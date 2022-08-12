@@ -3,15 +3,15 @@
 import { render } from './render.js';
 import { setLocalStorage } from './setLocalStorage.js';
 import { toDoList } from './variables.js';
-import { editingText } from './editingText.js';
+import { editInput } from './editInput.js';
 import { strikethroughLines } from './strikethroughLines.js';
-import { closingBtn } from './closingBtn.js';
+import { closeButton } from './closeButton.js';
 import trashIcon from './icons/Trash.svg';
 
 export default class Dynamic {
   static creatingNewItem = (text, completed, index) => {
     const labelItem = document.createElement('label');
-    labelItem.classList.add('todo-list-label');
+    labelItem.classList.add('to-do-list-item');
     labelItem.id = index;
     if (completed) {
       labelItem.style.backgroundColor = 'rgb(190, 255, 199)';
@@ -35,7 +35,7 @@ export default class Dynamic {
 
     // inputClosureButton
     inputClosure.addEventListener('click', () => {
-      closingBtn(index);
+      closeButton(index);
       render();
       setLocalStorage();
     });
@@ -50,7 +50,7 @@ export default class Dynamic {
       if (e.target.classList.contains('input-text')) {
         const inputText = e.target;
         const inputId = Number(inputText.id.split('_')[1]);
-        editingText(inputText, inputId);
+        editInput(inputText, inputId);
         setLocalStorage();
       }
     });

@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable import/no-cycle */
 import DataClass, { cleanList } from './variables.js';
-import Dynamic from './creatingItems.js';
+import Dynamic from './createItems.js';
 
 export const render = () => {
   cleanList();
