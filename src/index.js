@@ -6,7 +6,7 @@ import { clearSelected } from './modules/clearSelected.js';
 import { deleteAll } from './modules/deleteAll.js';
 import { render } from './modules/render.js';
 import DataClass, {
-  cleanList, clearAll, selectAll, clickPlus, newItem,
+  cleanList, clearAll, selectAll, addTask, newItem,
 } from './modules/variables.js';
 
 cleanList();
@@ -23,12 +23,17 @@ selectAll.addEventListener('click', () => {
   render();
 });
 
-clickPlus.addEventListener('click', () => {
+addTask.addEventListener('click', () => {
+  if (newItem.value === '') {
+    alert('Blank input'); // eslint-disable-line no-alert
+  } 
+  else {
   const { value } = newItem;
   insertNewItem(value);
   newItem.value = '';
   render();
   setLocalStorage();
+  }
 });
 
 newItem.addEventListener('keypress', (event) => {
