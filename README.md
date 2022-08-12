@@ -12,8 +12,8 @@ To setup, follow these simple steps.
 
 - Clone the [repo](https://github.com/DJ-MrJay/To-Do-List) or download and unzip the .zip file.
 - Open with your favorite terminal.
-- Run npm install --save-dev webpack 
-- Run npm start
+- Run <code>npm install --save-dev webpack</code> 
+- Run <code>npm start</code>
 
 ## Author
 - GitHub: [@githubhandle](https://github.com/DJ-MrJay)
