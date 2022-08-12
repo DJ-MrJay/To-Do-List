@@ -45,6 +45,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 3%;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .to-do-new-item input {
