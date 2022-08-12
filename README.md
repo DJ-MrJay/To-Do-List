@@ -27,6 +27,8 @@ To setup, follow these simple steps.
 ## Show your support
 Give ⭐️⭐️⭐️⭐️⭐️ if you like this project!
 
-## License
+## Live Demo
+This project is live on Github [Pages](https://dj-mrjay.github.io/To-Do-List).
 
+## License
 This project is [MIT](./MIT.md) licensed.
