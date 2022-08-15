@@ -20,6 +20,9 @@ To setup, follow these simple steps.
 - Twitter: [@twitterhandle](https://twitter.com/jonah_wambua)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mr-jay/)
 
+## Live Demo
+This project is live on [Github Pages](https://dj-mrjay.github.io/To-Do-List/dist/).
+
 ## Contributors
 - Thanks to everyone who idea and code was used
 - Contributions and feature requests are welcome!
