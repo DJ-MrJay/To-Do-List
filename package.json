@@ -5,7 +5,7 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "test": "jest",
+    "deploy": "gh-pages -d dist",
     "start": "webpack serve --open",
     "build": "webpack"
   },
@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/DJ-MrJay/To-Do-List/issues"
   },
-  "homepage": "https://github.com/DJ-MrJay/To-Do-List#readme",
+  "homepage": "https://github.com/DJ-MrJay/To-Do-List",
   "devDependencies": {
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.18.10",
@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "css-loader": "^6.7.1",
+    "gh-pages": "^4.0.0",
     "lodash": "^4.17.21",
     "style-loader": "^3.3.1"
   }
