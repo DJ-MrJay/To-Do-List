@@ -21,7 +21,7 @@ To setup, follow these simple steps.
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mr-jay/)
 
 ## Live Demo
-This project is live on [Github Pages](https://dj-mrjay.github.io/To-Do-List/dist/).
+This project is live on [Github Pages](https://dj-mrjay.github.io/To-Do-List).
 
 ## Contributors
 - Thanks to everyone who idea and code was used
