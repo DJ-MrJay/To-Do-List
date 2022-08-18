@@ -11,5 +11,5 @@ export const addTask = document.querySelector('.add-task');
 export const newItem = document.getElementById('newItem');
 export const toDoList = document.querySelector('.to-do-list');
 export default class DataClass {
-      static dataStructure = []
+  static dataStructure = []
 }
