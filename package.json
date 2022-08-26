@@ -10,7 +10,6 @@
     "build": "webpack",
     "test": "jest --coverage"
   },
-  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DJ-MrJay/To-Do-List.git"
