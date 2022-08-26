@@ -1,14 +1,13 @@
-import DataClass from './variables.js';
 import { insertNewItem } from './insertNewItem';
 
 jest.mock('./variables.js');
 
-describe('insertNewItem', () => {
+describe('Add a new list item', () => {
   it('should expose a function', () => {
 		expect(insertNewItem).toBeDefined();
 	});
   
-  it('insertNewItem should return expected output', () => {
+  it('Added item should be displayed', () => {
     // const retValue = insertNewItem(text);
     expect(false).toBeTruthy();
   });

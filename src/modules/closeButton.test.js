@@ -1,14 +1,13 @@
-import DataClass from './variables.js';
 import { closeButton } from './closeButton';
 
 jest.mock('./variables.js');
 
-describe('closeButton', () => {
+describe('Remove a list item', () => {
   it('should expose a function', () => {
 		expect(closeButton).toBeDefined();
 	});
   
-  it('closeButton should return expected output', () => {
+  it('Close button should remove a list item', () => {
     // const retValue = closeButton(index);
     expect(false).toBeTruthy();
   });
